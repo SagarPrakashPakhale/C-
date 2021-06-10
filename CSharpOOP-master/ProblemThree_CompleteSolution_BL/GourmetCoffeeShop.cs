@@ -15,20 +15,39 @@ namespace ProblemThree_CompleteSolution_BL
             this.itemName = iName;
             this.itemPrice = iPrice;
         }
-        double ITaxCompute.TaxOnTotalBill()
+        double ITaxCompute.TaxOnTotalBill(double total)
         {
-            throw new NotImplementedException();
+            return 0;
         }
 
         public override double PayPerPiece(int quantity)
         {
+            try
+            {
+                return quantity * itemPrice[1];
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return quantity * itemPrice[1];
+            }
 
-            return quantity * itemPrice[1];
+            
         }
 
         public override double PayPerWeight(int weight)
         {
-            return weight * itemPrice[2];
+            try
+            {
+                return weight * itemPrice[2];
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return weight * itemPrice[2];
+            }
+          
+
         }
     }
 }

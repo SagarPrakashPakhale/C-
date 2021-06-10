@@ -38,7 +38,7 @@ namespace ProblemThree_CompleteSolution
             int quantityInGrams = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("The total cost for {0} packets of {1} is {2}/- INR", quantityToBuy,gosObj.itemName,gosObj.PayPerPiece(quantityToBuy));
             Console.WriteLine("The total cost for {0} grams of {1} is {2}/- INR", quantityInGrams, gosObj2.itemName, gosObj2.PayPerWeight(quantityInGrams));
-
+            
 
             ////Key 1 for first product
             //organicPriceDict.Add(1, 234.10);
@@ -77,7 +77,9 @@ namespace ProblemThree_CompleteSolution
             int quantityInGramsCoffee = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("The total cost for {0} packets of {1} is {2}/- INR", quantityToBuy, cofeeObj.itemName, cofeeObj.PayPerPiece(quantityToBuyCoffee));
             Console.WriteLine("The total cost for {0} grams of {1} is {2}/- INR", quantityInGramsCoffee, coffeObj2.itemName, coffeObj2.PayPerWeight(quantityInGramsCoffee));
-            Console.WriteLine("Thank you for shoping");        
+            Console.WriteLine("Thank you for shoping");
+            var result=Console.ReadKey();
+            Console.WriteLine(result);
         }
             ////Key 1 for first product
             //coffeePriceDict.Add(1, 400.40);
